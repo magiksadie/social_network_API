@@ -42,10 +42,6 @@ const ReactionSchema = new Schema({
         default: Date.now,
         get: (createdAt) => dateFormat(createdAt),
     },
-    toJSON: {
-        virtuals: true,
-        getters: true,
-    },
     id: false,
 });
 
